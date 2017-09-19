@@ -94,6 +94,11 @@ a {
         #mainNav .nav-link.active:hover {
           color: white; } }
 
+#navbar-logo{
+  width: 52px;
+  height: 52px;
+}
+
 .masthead {
   display: table;
   width: 100%;
@@ -120,9 +125,9 @@ a {
       height: 100%;
       padding: 0; }
       .masthead .intro-body .brand-heading {
-        font-size: 100px; }
+        font-size: 45px; }
       .masthead .intro-body .intro-text {
-        font-size: 22px; } }
+        font-size: 30px; } }
 
 /* ==========================================================================
     CIRCLE BUTTON SCROLL TRIGGER
@@ -918,3 +923,5 @@ body {
     width: 70%;
     margin: auto;
 }
+
+
