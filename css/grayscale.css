@@ -889,11 +889,13 @@ body {
    	border-style: none none solid none;
     box-shadow: none;
     background: transparent;
+    color: white;
 }
 .form-control:focus {
 	box-shadow: none;
     border-color: #5e9bfc;
     background: transparent;
+    color: white;
     
 }
 .js-hide-label {
