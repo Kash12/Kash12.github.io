@@ -117,9 +117,15 @@ a {
     vertical-align: middle; }
     .masthead .intro-body .brand-heading {
       font-size: 50px;
+      font-family: adobe-garamond-pro;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0em;
+      line-height: 1em;
      }
     .masthead .intro-body .intro-text {
-      font-size: 18px; }
+      font-size: 18px;
+      font-family: fantasy; }
   @media (min-width: 768px) {
     .masthead {
       height: 100%;
@@ -226,6 +232,19 @@ body {
     font-size: 60px important!;
 }
 
+#aboutme {
+      font-family: proxima-nova;
+}
+
+#headings {
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 0em;
+  line-height: 1em;
+  text-transform: none;
+}
 
 
 
@@ -870,6 +889,121 @@ body {
   /* Contact From
   /*----------------------------------------*/
 
+ 
+/* ======================== */
+
+.btn--shockwave.is-active {
+  -webkit-animation: shockwaveJump 1s ease-out infinite;
+          animation: shockwaveJump 1s ease-out infinite;
+}
+.btn--shockwave.is-active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  -webkit-animation: shockwave 1s .65s ease-out infinite;
+          animation: shockwave 1s .65s ease-out infinite;
+}
+.btn--shockwave.is-active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  -webkit-animation: shockwave 1s .5s ease-out infinite;
+          animation: shockwave 1s .5s ease-out infinite;
+}
+
+@-webkit-keyframes shockwaveJump {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  50% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  55% {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  60% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes shockwaveJump {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  50% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  55% {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  60% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes shockwave {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15);
+  }
+  95% {
+    box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;
+  }
+  100% {
+    -webkit-transform: scale(2.25);
+            transform: scale(2.25);
+  }
+}
+@keyframes shockwave {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15);
+  }
+  95% {
+    box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;
+  }
+  100% {
+    -webkit-transform: scale(2.25);
+            transform: scale(2.25);
+  }
+}
+
+/* ================== */
+
+ 
   textarea {
 	resize: none;
 }
