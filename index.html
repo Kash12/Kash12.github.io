@@ -1,227 +1,677 @@
 <!DOCTYPE html>
-<link rel="icon" href="img/favicon.png">
-
-<div id="loader-wrapper">
-  <div id="loader"></div>
-
-  <div class="loader-section section-left"></div>
-  <div class="loader-section section-right"></div>
-
-</div>
-<html lang="en" class="main">
-
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Khashayar Kheiri</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-  <title>Khashayar Kheiri</title>
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
-  <!-- Custom styles for this template -->
-  <link href="css/grayscale.css" rel="stylesheet">
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
 
 </head>
 
-<body id="page-top">
+<body id="top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img id = "navbar-logo" src="./img/favicon.png" alt=""></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="./blog/blog.html">Blog</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#project">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
 
-  <!-- Intro Header -->
-  <header class="masthead">
-    <div class="intro-body">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h1 class="brand-heading" id="bheading">Khashayar
-              <font color="#5e9bfc">K</font>heiri</h1>
-            <p class="intro-text">Developer
-              <font color="#5e9bfc">|</font> Technology Enthusiast
-              <font color="#5e9bfc"> |</font> Learner </p>
-            <a href="#about" class="btn btn-circle js-scroll-trigger btn btn--shockwave is-active">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-  <!-- About Section -->
-  <section id="about" class="content-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 id="headings">About Me</h2>
-          <p id="aboutme">Hi! My name is Kash and I'm currently studying Bachelor of IT at Latrobe University. I've always been drawn to
-            technology and it amazed me how few lines of code could accomplish the most complex tasks. It was my hobby to always
-            stay updated with the latest advancements in the technological world and gradually it turned into my passion.
-          </p>
-          <a href="./Khashayar_Kheiri_cv.pdf" class="download-btn" target="_blank" data-initialized="true">Download Resume</a></div>
-      </div>
-    </div>
-  </section>
+	   		<div class="logo">
+		         <h3 >K A S H</h3>
+		      </div>		      
 
-  <!-- Project Section -->
-  <section id="project" class="download-section content-section text-center">
-    <h2 id="headings" style="margin-bottom: 100px">Projects</h2>
-    <section class="promos-bann row">
-      <!--Single Promo-->
-      <div class="sin-promo col-lg-4 ">
-        <div class="promo-wrap">
-          <img src="./img/download.jpeg" alt="">
-          <div class="promo-bref text-center">
-            <h1>Latrobe<br>Tipping<br>System</h1>
-            <a href="./article1/article1.html" class="button color white-hover animated fadeOutDown">view more</a>
-          </div>
-        </div>
-      </div>
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<!-- <li><a class="smoothscroll"  href="#services" title="">Services</a></li>					 -->
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+						<!-- <li><a href="styles.html" title="">Style Demo</a></li>				 -->
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
 
-      <!--Single Promo-->
-      <div class="sin-promo col-lg-4 ">
-        <div class="promo-wrap">
-          <img src="./img/download.jpeg" alt="">
-          <div class="promo-bref text-center">
-            <h1>Coming<br>Soon</h1>
-            <a href="./article2/article2.html" class="button color white-hover animated fadeOutDown">view more</a>
-          </div>
-        </div>
-      </div>
-      <!--Single Promo-->
-      <div class="sin-promo col-lg-4 ">
-        <div class="promo-wrap">
-          <img src="./img/download.jpeg" alt="">
-          <div class="promo-bref text-center">
-            <h1>Coming<br>Soon</h1>
-            <a href="./article3/article3.html" class="button color white-hover animated fadeOutDown">view more</a>
-          </div>
-        </div>
-    </section>
-  </section>
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
 
-  <!-- Contact Me Section -->
+   	<div class="intro-overlay"></div>	
 
-  <section id="contact" class="content-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-          <h2 id="headings">Get in touch</h2>
-        </div>
-      </div>
-      <div class="row-form">
-        <div>
-          <form id="contact-form" class="form" action="https://formspree.io/khashayar.kheiri@yahoo.com" method="POST" role="form">
-            <div class="form-group">
-              <label class="form-label" for="name">Your Name</label>
-              <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="email">Your Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="subject">Subject</label>
-              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="message">Message</label>
-              <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>
-            </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-start-order">Send Message</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="social" class="content-section text-center">
-    <div class="col-lg-8 mx-auto">
-      <ul class="list-inline banner-social-buttons">
-        <li class="list-inline-item">
-          <a href="https://github.com/KhashayarKheiri" target="_blank" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <!-- <span class="network-name">Github</span> -->
-                </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.facebook.com/khashayarkheiri" target="_blank" class="btn btn-default btn-lg">
-                    <i class="fa fa-facebook fa-fw"></i>
-                    <!-- <span class="network-name">Facebook</span> -->
-                  </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.linkedin.com/in/khashayar-kheiri-7a1b51119/" target="_blank" class="btn btn-default btn-lg">
-                  <i class="fa fa-linkedin fa-fw"></i>
-                  <!-- <span class="network-name">LinkedIn</span> -->
-                </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com/_khashayarkh_/" target="_blank" class="btn btn-default btn-lg">
-                    <i class="fa fa-instagram fa-fw"></i>
-                    <!-- <span class="network-name">LinkedIn</span> -->
-                  </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.pinterest.com/khashayarkheiri/" target="_blank" class="btn btn-default btn-lg">
-                      <i class="fa fa-pinterest fa-fw"></i>
-                      <!-- <span class="network-name">LinkedIn</span> -->
-                    </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+   	<div class="intro-content">
+   		<div class="row">
 
-  <!-- Footer -->
-  <footer>
-    <div class="container text-center">
-      <p>Copyright &copy; 2017</p>
-    </div>
-  </footer>
+   			<div class="col-twelve">
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	   			<h5>Hello, World.</h5>
+	   			<h1>I'm Khashayar Kheiri.</h1>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/grayscale.js"></script>
+	   			<p class="intro-position">
+	   				<span>Developer</span>
+					<span>Dreamer</span>
+					<span>Learner</span>   
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         <li><a href="https://www.facebook.com/khashayarkheiri" target="_blank"><i class="fa fa-facebook"></i></a></li>
+         <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+         <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+		 <li><a href="https://www.instagram.com/_khashayarkh_/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		 <li><a href="https://github.com/KhashayarKheiri" target="_blank"><i class="fa fa-github"></i></a></li>
+		 <li><a href="https://www.linkedin.com/in/khashayar-kheiri-7a1b51119/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		 
+		 
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Little bit about me.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/myAvatar.png" alt="Profile Picture">
+
+   				<p class="lead">I've always been drawn to technology and it amazed me how few lines of code could accomplish the most complex tasks. It was my hobby to always stay updated with the latest advancements in the technological world and gradually it turned into my passion.</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Khashayar Kheiri</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>September 12, 1996</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Student, Full Stack Developer</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span>www.khashayarkheiri.com</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>khashayar.kheiri@yahoo.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent80"><span>80%</span></div>
+				   	<strong>HTML5</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>CSS3</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent35"><span>35%</span></div>
+				   	<strong>MongoDB</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent35"><span>35%</span></div>
+				   	<strong>Express</strong>
+				   </li>
+				   <li>
+
+				   	<div class="progress percent50"><span>50%</span></div>
+				   	<strong>Angular2</strong>
+				   </li>
+				   	<li>
+
+				   	<div class="progress percent35"><span>35%</span></div>
+				   	<strong>Nodejs</strong>
+				   </li>
+
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="./Khashayar_Kheiri_cv.pdf" title="Download CV" class="button button-primary">Download CV</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<!-- <div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Master Degree</h3>
+	   					<p>July 2015 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>University of Life</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+	   				</div>
+
+	   			</div> -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>March 2015 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>La trobe University</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Foundation Studies</h3>
+	   					<p>Feb 2013 - Dec 2014</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>La trobe Melbourne</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/latrobe1.jpg" alt="AFL Tipping System">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">AFL Tipping System</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Web App
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/x.png" alt="Shutterbug">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">NotepadX</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Software
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/comingsoon.gif"alt="Clouds">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Shoe Finder</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web App
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/comingsoon.gif" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Beetle</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Branding
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/comingsoon.gif" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Lighthouse</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/comingsoon.gif" alt="Salad">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Salad</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Branding
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->   
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/latrobe1.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>AFL Tipping System</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Shutterbug</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Shoe Finder</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web App</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Beetle</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Branding</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Lighthouse</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Salad</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Branding</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+
+	
+
+
+
+
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   			<p class="lead">Feel free to contact me if you'd like to talk or go grab a coffee, I'm always up to meeting new people.</p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-form">
+
+   		<div class="col-twelve">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="form-field">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>                       
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>                      
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning">            	
+            </div>            
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /contact-form -->
+
+
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+					<li><a href="https://www.facebook.com/khashayarkheiri" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/KhKhashayar"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://www.pinterest.com/khashayarkheiri/"><i class="fa fa-pinterest"></i></a></li>
+					<li><a href="https://www.instagram.com/_khashayarkh_/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://github.com/KhashayarKheiri" target="_blank"><i class="fa fa-github"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/khashayar-kheiri-7a1b51119/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		   
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright Kash 2017.</span> 
+		        	<!-- <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	 -->
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
 </body>
 
 </html>
