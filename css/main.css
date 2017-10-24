@@ -1612,8 +1612,8 @@ color: white;
  * ------------------------------------------------------------------- 
  */
 #resume {
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 6rem;
+	padding-bottom: 3rem;
 }
 
 #resume .resume-header {
@@ -1782,9 +1782,13 @@ color: white;
  */
 #portfolio {
 	background: #FFFFFF;
-	padding-top: 12rem;
+	padding-top: 8rem;
 	padding-bottom: 12rem;
 }
+#portfolio .edu {
+	color: #1f5fa5;
+}
+
 #portfolio .folio-item {
 	padding: 0;
 	position: relative;
