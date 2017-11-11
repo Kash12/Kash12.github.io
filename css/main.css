@@ -1490,9 +1490,14 @@ color: white;
 }
 
 .intro-info {
-	margin-top: 4.2rem;
-	margin-right: -30px;
-	margin-left: -30px;
+    margin-top: 4.2rem;
+    margin-right: -30px;
+    margin-left: -30px;
+    border: 1px solid #ccc;
+    padding: 25px;
+    margin: 10px -100px 10px -100px;
+    border-radius: 10px;
+    opacity: 0.9;
 }
 .intro-info img {
 	height: 9rem;

@@ -203,7 +203,15 @@
       	window.location.hash = target;
       });
 
-  	});  
+	  });  
+	  
+	/*---------------------------------------------------- */
+  	/* Blog Slow Scrolling
+  	------------------------------------------------------ */
+	  $(".nav a").click(function(e){       
+		e.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, "slow");
+	});
   
 
    /*---------------------------------------------------- */
