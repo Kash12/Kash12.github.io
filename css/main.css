@@ -2523,6 +2523,9 @@ footer .footer-social li {
 footer .footer-social li a {
 	color: #FFFFFF;
 }
+.footer-social li a:hover, .footer-social li a:focus {
+	color: #1f5fa5;
+}
 footer .copyright span {
 	display: inline-block;
 }
